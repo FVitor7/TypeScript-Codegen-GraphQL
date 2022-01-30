@@ -8,7 +8,7 @@ const Cars: React.FC = () => {
   if (fetching) return <div>Loading</div>;
   if (data?.cars.length === 0) return <div>No cars yet</div>;
   return (
-    <div className="flex flex-wrap space-x-1">
+    <div className="flex flex-nowrap space-x-1 overflow-auto">
       {data?.cars.map(({ name, brand }, index) => (
         <Pill key={index}>
           {name} {brand && `at ${brand.name}`}
