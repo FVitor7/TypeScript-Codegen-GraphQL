@@ -123,12 +123,12 @@ const Home: NextPage = () => {
         </h4>
         <p className="flex">
           <div className="p-2 text-1xl md:text-1sm font-extrabold">
-            Backend: Python, Starlette, SQLAlchemy and Strawberry GraphQL
+            Backend: Python, PostgreSQL, Starlette, SQLAlchemy and Strawberry GraphQL
           </div>
         </p>
         <p className="flex">
           <div className="p-2 text-1xl md:text-1sm font-extrabold">
-            Frontend: GraphQL Code Generator, TypeScript and Next.JS
+            Frontend: TypeScript, Next.JS and GraphQL Code Generator
           </div>
         </p>
       </main>
