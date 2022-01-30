@@ -1,0 +1,29 @@
+union AddBrandResponse = Car | BrandExists
+
+union AddCarResponse = Car | BrandNotFound
+
+type Brand {
+  name: String!
+}
+
+type BrandExists {
+  message: String!
+}
+
+type BrandNotFound {
+  message: String!
+}
+
+type Mutation {
+  addCar(name: String!, brandName: String!): AddCarResponse!
+  addBrand(name: String!): AddBrandResponse!
+}
+
+type Query {
+  cars: [Car!]!
+}
+
+type Car {
+  name: String!
+  brand: Brand
+}

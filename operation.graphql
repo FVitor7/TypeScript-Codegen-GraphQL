@@ -1,0 +1,52 @@
+query Cars {
+  cars {
+    ...CarFields
+  }
+}
+
+query Brands {
+  brands {
+    ...BrandFields
+  }
+}
+
+fragment CarFields on Car {
+  id
+  name
+  brand {
+    name
+  }
+}
+
+fragment BrandFields on Brand {
+  id
+  name
+}
+
+mutation AddCar($name: String!, $brandName: String!) {
+  addCar(name: $name, brandName: $brandName) {
+    __typename
+    # ... on BrandNotFound {
+    #   __typename
+    #   message
+    # }
+    ... on Car {
+      __typename
+      ...CarFields
+    }
+  }
+}
+
+mutation AddBrand($name: String!) {
+  addBrand(name: $name) {
+    __typename
+    ... on BrandExists {
+      __typename
+      message
+    }
+    ... on Brand {
+      __typename
+      ...BrandFields
+    }
+  }
+}
