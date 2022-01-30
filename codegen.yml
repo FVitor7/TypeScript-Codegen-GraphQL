@@ -1,4 +1,4 @@
-schema: https://starlette-strawberry-graphql.herokuapp.com/graphql
+schema: http://starlette-strawberry-graphql.herokuapp.com/graphql
 documents:
   - operation.graphql
 generates:
