@@ -1,6 +1,6 @@
 schema: http://starlette-strawberry-graphql.herokuapp.com/graphql
 documents:
-  - operation.graphql
+  - src/operation.graphql
 generates:
   ./src/graphql.ts:
     config:
