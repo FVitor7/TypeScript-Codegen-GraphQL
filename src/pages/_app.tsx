@@ -4,7 +4,7 @@ import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 
 const client = createClient({
-  url: "http://localhost:3000/graphql",
+  url: "/graphql",
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
