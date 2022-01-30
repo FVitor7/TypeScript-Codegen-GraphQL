@@ -1,4 +1,4 @@
-schema: http://localhost:8000/graphql
+schema: https://starlette-strawberry-graphql.herokuapp.com/graphql
 documents:
   - operation.graphql
 generates:

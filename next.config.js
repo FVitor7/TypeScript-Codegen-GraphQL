@@ -6,7 +6,7 @@ module.exports = {
       beforeFiles: [
         {
           source: "/graphql",
-          destination: "http://localhost:8000/graphql",
+          destination: "https://starlette-strawberry-graphql.herokuapp.com/graphql",
         },
       ],
     };
