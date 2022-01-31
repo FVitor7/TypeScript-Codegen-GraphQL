@@ -123,7 +123,7 @@ const Home: NextPage = () => {
         </h4>
         <p className="flex">
           <div className="p-2 text-1xl md:text-1sm font-extrabold">
-            Backend: Python, PostgreSQL, Starlette, SQLAlchemy and Strawberry GraphQL
+            Backend: Python, PostgreSQL, FastAPI, SQLAlchemy and Strawberry GraphQL
           </div>
         </p>
         <p className="flex">
